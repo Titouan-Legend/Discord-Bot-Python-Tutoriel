@@ -16,7 +16,7 @@ async def ban(ctx, user : discord.User, *reason):
 	await ctx.send(f"{user} à été ban pour la raison suivante : {reason}.")
 
 def isOwner(ctx):
-	return ctx.message.author.id == 441881039338471425
+	return ctx.message.author.id == MET_TON_ID_ICI
 
 @bot.command()
 @commands.check(isOwner)
